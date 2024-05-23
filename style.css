@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 120%;
+    background-image: url(Unidad1/sd.jpg);
+    
+    background-size: 1120px;
+    background-position: center;
+    margin: 0;  
+    padding: 0;
+  }
+  
+  footer {
+      color: white; /* Color del texto para el pie de página */
+  }
+  
+  a {
+    color: white;
+  }
+  
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 9999;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .center {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Añadido para centrar verticalmente los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no hay espacio suficiente */
+    margin-top: 150px;
+    padding-bottom: 20px;
+  }
+  
+  .index,
+  .info {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+  }
+  
+  .buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #555;
+  }
+  
+  .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #333;
+    border: 1px solid #555;
+  }
+  
+  .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .box:hover .content {
+    opacity: 1;
+  }
+  
+  .box .content p {
+    margin: 10px;
+  }
