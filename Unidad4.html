@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Página de Oscar Castillo</title>
+<style>
+     body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("Unidad1/testt.jpg"); /* Ruta a tu imagen de fondo */
+  background-repeat: repeat; /* Repite la imagen de fondo */
+}
+
+    .header-fixed {
+        position: fixed;
+        top: 0; /* Establece en la parte superior */
+        left: 0; /* Establece a la izquierda */
+        right: 0; /* Extiende hasta la derecha */
+        background-color: rgba(240, 240, 240, 0.8); /* Fondo semitransparente */
+        padding: 10px 20px; /* Espaciado interno */
+        z-index: 1000; /* Asegura que el texto se mantenga sobre otros elementos */
+        box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+        display: flex;
+        justify-content: space-between; /* Coloca los elementos en los extremos */
+        align-items: center; /* Centra verticalmente */
+    }
+
+    .back-to-top {
+        text-decoration: none;
+        color: #333; /* Color de texto */
+    }
+
+    .back-to-top:hover {
+        text-decoration: underline; /* Subrayado al pasar el ratón */
+    }
+
+    .content {
+        padding: 50px;
+        margin-top: 40px; /* Dejar espacio para la barra fija en la parte superior */
+    }
+
+    header {
+        margin-top: 70px; /* Añade margen superior para separar del header fijo */
+        text-align: center; /* Centra el contenido */
+    }
+
+    header img {
+        margin-top: -10px; /* Ajusta la posición de las imágenes */
+    }
+
+    .unidad {
+        width: calc(33.333% - 40px); /* Calcula el ancho para ocupar 33.333% de la línea */
+        height: 100px;
+        background-color: #000; /* Color negro */
+        color: #fff;
+        text-align: center;
+        line-height: 100px; /* Alinea verticalmente el texto */
+        margin: 20px; /* Margen exterior para separar los rectángulos */
+        float: left; /* Alinea horizontalmente */
+        border-radius: 10px; /* Esquinas redondeadas */
+    }
+
+    .subtitulo {
+        clear: both; /* Limpiar flotantes */
+        text-align: center; /* Centra el texto */
+        margin-top: 50px; /* Espacio superior */
+    }
+
+    @media (max-width: 768px) {
+        .unidad {
+            width: calc(50% - 40px); /* Cambia a 50% de ancho en dispositivos más pequeños */
+        }
+    }
+</style>
+<style>
+    .redirect-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .redirect-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div id="top"></div> <!-- Ancla para regresar al inicio -->
+<div class="header-fixed">
+    <div class="left">
+        <span>Página web Oscar Castillo</span>
+    </div>
+    <div class="right">
+        <a href="#top" class="back-to-top">Regresar a inicio</a>
+    </div>
+</div>
+<header>
+    <img src="https://imgs.search.brave.com/yH-ZUPUnKS8vQmEwbbgmLNcnSfEZRBxEW4kKhx4zRzE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2RjdWF1aHRlbW9j/LnRlY25tLm14L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIxLzA4/L0xPR08tVkVSVElD/QUwtVEVDTk0ucG5n"
+        alt="Escudo del tecnologico nacional mexicano" width="150px" height="150px"
+        style="margin-right: 5px; float: left;">
+
+    <img src="https://saltillo.tecnm.mx/tecnologico/logotec.png" alt="Escudo del Instituto tecnologico Saltillo"
+        width="150px" height="150px" style="margin-left: 5px; float:right;">
+
+    <h1>Tecnológico Nacional de México</h1>
+    <h2>Instituto Tecnológico de Saltillo</h2>
+</header> 
+<button class="redirect-button" onclick="redirectToPage()">Ir a Pagina Principal</button>
+
+    <script>
+        function redirectToPage() {
+            window.location.href = "PW.html";
+        }
+    </script>
+<div class="content">
+    <div class="subtitle">
+       
+    </div>
+    <div class="subtitle" id="1.1 Modelos de arquitectura de computo.">
+        <h4>-4.1 Aspectos básicos de la computación paralela</h4>
+        <p>La computación paralela es una forma de cómputo en la que muchas instrucciones se ejecutan simultáneamente, operando sobre el principio de que problemas grandes a menudo se pueden dividir en unos más pequeños, que luego son resueltos simultáneamente (en paralelo). Hay varias formas diferentes de computación paralela: paralelismo a nivel de bit, paralelismo a nivel de instrucción, paralelismo de datos y paralelismo de tareas.</p>
+
+<p>El paralelismo se ha empleado durante muchos años, sobre todo en la computación de altas prestaciones, pero el interés en ella ha crecido últimamente debido a las limitaciones físicas que impiden el aumento de la frecuencia. Como el consumo de energía y, por consiguiente, la generación de calor de las computadoras constituye una preocupación en los últimos años, la computación en paralelo se ha convertido en el paradigma dominante en la arquitectura de computadores, principalmente en forma de procesadores multinúcleo.</p>
+
+    </div>
+    <div class="subtitle">
+        <h4>-4.2 Tipos de computación paralela.</h4>
+        <p>Existen varios tipos de computación paralela que se utilizan en diferentes contextos y escenarios. Algunos de los enfoques más comunes incluyen el procesamiento paralelo a nivel de bit, a nivel de instrucción, a nivel de datos y a nivel de tarea. Estos enfoques se diferencian en cómo se dividen y procesan las tareas y los datos.</p>
+        <div align = "center"><img src = "Unidad4/paralela.jpg"; alt = "Eckert"; height = "250px"; width = "350px";>
+    </div>
+    <div class="subtitle">
+        <h4>-4.2.1 Clasificacion.</h4>
+        <h2>Clasificación de Computadoras Paralelas</h2>
+<p>Las computadoras paralelas se pueden clasificar de acuerdo con el nivel en que el hardware soporta paralelismo, lo que a menudo se relaciona con la distancia entre los nodos básicos de cómputo:</p>
+
+<h3>Computación Multinúcleo</h3>
+<p>Un procesador multinúcleo incluye múltiples unidades de ejecución (núcleos) en un mismo chip, permitiendo la ejecución simultánea de múltiples instrucciones.</p>
+
+<h3>Multiprocesamiento Simétrico (SMP)</h3>
+<p>En un sistema SMP, múltiples procesadores idénticos comparten memoria y se conectan mediante un bus, aunque la contención de este último puede prevenir el escalado efectivo de la arquitectura.</p>
+
+<h3>Computación en Clúster</h3>
+<p>Un clúster agrupa varios ordenadores débilmente acoplados que funcionan en estrecha colaboración, pudiendo considerarse como un único sistema en algunos aspectos.</p>
+
+<h3>Procesamiento Paralelo Masivo (MPP)</h3>
+<p>Los sistemas MPP son más grandes que los clústeres, con muchos más de 100 procesadores, donde cada CPU tiene su propia memoria y copia del sistema operativo y la aplicación.</p>
+
+<h3>Computación Distribuida</h3>
+<p>Utiliza ordenadores comunicados a través de Internet para trabajar juntos en problemas específicos, siendo la forma más distribuida de la computación paralela.</p>
+
+<h3>Computadoras Paralelas Especializadas</h3>
+<p>Existen dispositivos paralelos especializados que, aunque no son específicos de un dominio, suelen aplicarse solo a ciertas clases de problemas paralelos.</p>
+
+<h3>Cómputo Reconfigurable con Arreglos de Compuertas Programables (FPGA)</h3>
+<p>El uso de FPGA como coprocesadores en computadores de propósito general permite una reconfiguración dinámica para optimizar ciertas funciones computacionales.</p>
+
+<h3>Cómputo de Propósito General en Unidades de Procesamiento Gráfico (GPGPU)</h3>
+<p>Una tendencia en ingeniería informática donde los GPUs, originalmente optimizados para gráficos, se utilizan como co-procesadores para procesamiento general.</p>
+
+<h3>Circuitos Integrados de Aplicación Específica (ASIC)</h3>
+<p>Los ASIC están completamente optimizados para aplicaciones específicas, ofreciendo un rendimiento superior para dichas aplicaciones en comparación con ordenadores de propósito general.</p>
+
+<h3>Procesadores Vectoriales</h3>
+<p>Estos procesadores pueden ejecutar la misma instrucción sobre grandes conjuntos de datos o vectores, optimizando el procesamiento de operaciones en arreglos lineales de números.</p>
+<div align = "center"><img src = "Unidad4/Clas.jpg"; alt = "Eckert"; height = "250px"; width = "350px";>
+    </div>
+    <div class="subtitle">
+        <h4>-4.2.2 Arquitectura de computadores secuenciales.</h4>
+        <p><strong>Definición de Sistema Secuencial:</strong> Un sistema en el que las salidas dependen no solo de las entradas actuales sino también de los estados previos. Este comportamiento se diferencia de los sistemas combinacionales, donde las salidas dependen únicamente de las entradas presentes sin considerar historial.</p>
+
+<p><strong>Componentes Clave:</strong></p>
+<p><em>Memoria:</em> Esencial para almacenar el estado anterior de las entradas, conocidas como variables de estado. La memoria en estos sistemas permite retener información sobre el estado previo para influir en la salida actual.</p>
+
+<p><em>Dispositivos de Memoria:</em> Incluye dispositivos como retardadores y celdas de memoria de diferentes tipos como DRAM (Dynamic Random Access Memory), SRAM (Static Random Access Memory), y Flip-Flops.</p>
+
+<p><strong>Componente Específico: Flip-Flop</strong></p>
+<p>Un tipo de multivibrador biestable que es ampliamente utilizado en electrónica digital. Actúa como un elemento de memoria básico en sistemas secuenciales.</p>
+<p><em>Tipos Comunes:</em></p>
+<p>Flip-Flop D (Data o Delay Flip-Flop): Captura el valor de entrada en un momento específico y lo mantiene hasta que se actualiza nuevamente, comúnmente utilizado en aplicaciones de almacenamiento de datos y sincronización.</p>
+
+<p><strong>Importancia en Electrónica Digital:</strong> Los sistemas secuenciales son fundamentales en la implementación de lógica computacional y de control en dispositivos electrónicos y sistemas informáticos, permitiendo operaciones complejas de procesamiento de datos y control automático.</p>
+
+    </div>
+    <div class="subtitle">
+        <h4>-4.2.3 Organización de direcciones de memoria.</h4>
+        <p>La organización de direcciones de memoria en sistemas de computación paralela es un aspecto crucial que determina cómo se asignan y acceden a las direcciones de memoria dentro del sistema. Este proceso implica varias consideraciones clave que influyen en la eficiencia y la efectividad del procesamiento paralelo.</p>
+
+<p><strong>Memoria Compartida:</strong> En sistemas con memoria compartida, todos los procesadores acceden a una memoria común. Las técnicas de direccionamiento deben garantizar que el acceso concurrente no lleve a condiciones de carrera o inconsistencias de datos.</p>
+
+<p><strong>Memoria Distribuida:</strong> Contrario a la memoria compartida, en la memoria distribuida cada procesador tiene su propia memoria local. Esto reduce la contención de acceso a memoria pero introduce la complejidad de gestionar datos dispersos a través de múltiples nodos.</p>
+
+<p><strong>Técnicas de Direccionamiento:</strong> Las técnicas de direccionamiento en computación paralela incluyen direccionamiento directo e indirecto, así como técnicas de hash distribuido para manejar el acceso eficiente a las direcciones de memoria. Estas técnicas son fundamentales para optimizar el acceso a los datos y mejorar el rendimiento general del sistema paralelo.</p>
+
+<p>En resumen, la organización adecuada de direcciones de memoria es fundamental para el aprovechamiento efectivo de los recursos en la computación paralela, impactando directamente en el desempeño y la escalabilidad del sistema.</p>
+
+    </div>
+    <div class="subtitle">
+        <h4>-4.3 Sistema de memoria compartida.</h4>
+        <p>Los sistemas de memoria compartida son un enfoque de computación paralela en el que múltiples procesadores acceden a una misma área de memoria compartida. Esto permite a los procesadores compartir datos y comunicarse de manera eficiente. Dentro de los sistemas de memoria compartida, existen dos tipos principales de redes: las redes de medio compartida y las redes conmutadas.</p>
+    </div>
+    <div class="subtitle">
+        <h4>-4.3.1.1 Redes de medio compartida.</h4>
+<p>Las redes de medio compartida son un tipo de arquitectura de memoria compartida en la que los procesadores se conectan físicamente a un bus compartido o a una red de interconexión. Los procesadores pueden leer y escribir en la memoria compartida a través de este medio compartido.</p>
+    </div>
+    <div class="subtitle">
+        <h4>-4.3.1.2 Redes conmutadas.</h4>
+        <p>Las redes conmutadas, por otro lado, utilizan interruptores o conmutadores para establecer conexiones entre los procesadores y la memoria compartida. Estas redes ofrecen una mayor escalabilidad y capacidad de comunicación en comparación con las redes de medio compartida.</p>
+    </div>
+    <div class="subtitle">
+        <h4>-4.4 Sisitemas de memoria construida.</h4>
+        <p>Los sistemas de memoria construida son una forma de organización de la memoria en la computación paralela en la que cada procesador tiene su propia memoria local. Esto permite una mayor independencia entre los procesadores y reduce la necesidad de acceder a una memoria compartida.</p>
+    </div>
+    <div class="subtitle">
+        <h4>-4.5 Casos de estudio.</h4>
+        <p>En el campo de la computación paralela, existen numerosos casos de estudio que han demostrado la eficacia y los beneficios de los enfoques paralelos en diferentes dominios. Algunos ejemplos incluyen el uso de computación paralela en simulaciones científicas, análisis de grandes conjuntos de datos, renderizado de gráficos y modelado de sistemas complejos.</p>
+    </div>    
+</div>
+</body>
+</html>
